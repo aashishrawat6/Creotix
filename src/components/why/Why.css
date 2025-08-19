@@ -1,0 +1,69 @@
+#why {
+  background-color: #d6f2ff;
+}
+
+#why .heading {
+  text-align: center;
+}
+
+#why .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#why .content {
+  margin-inline: auto;
+  width: max-content;
+  margin-top: 3rem;
+
+  position: relative;
+}
+
+#why .box {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 75%;
+}
+
+#why .inner {
+}
+
+#why .inner h2 {
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+#why .inner p {
+  font-weight: 400;
+  letter-spacing: 6%;
+}
+
+#why .box1 {
+    top: 15%;
+    right: -60%;
+}
+
+#why .box2{
+    bottom: 18%;
+    right: -60%;
+}
+
+#why .box3{
+    bottom:18%;
+    left:-60%;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#why .box4{
+    top:15%;
+    left: -60%;
+    flex-direction: row-reverse;
+    text-align: right;
+}

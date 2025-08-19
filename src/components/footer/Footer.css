@@ -1,0 +1,46 @@
+#footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+#footer .footerHeading {
+  font-family: var(--cabinetgrotesk-font);
+  font-weight: 700;
+  font-size: 24px;
+  padding: 1rem 20px;
+}
+
+#footer .footerLi {
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#footer .grid4Content {
+  padding: 10px 20px;
+}
+
+#footer .grid4Content h4 {
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#footer .grid4Content p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#footer .grid1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer .socials{
+    display: flex;
+    gap: 0.5rem;
+}

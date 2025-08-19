@@ -1,0 +1,19 @@
+#footerstrip {
+  background: var(--theme-color);
+}
+
+#footerstrip .strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 12px 1rem;
+  margin-inline: auto;
+}
+
+#footerstrip p {
+  font-weight: 400;
+  font-size: 14px;
+    color: #fff;
+    text-align: center;
+}

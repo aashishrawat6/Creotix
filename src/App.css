@@ -1,42 +1,115 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/src/assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/src/assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/src/assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/src/assets/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
 }
 
-.card {
-  padding: 2em;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--manrope-font);
+  color: #333;
 }
 
-.read-the-docs {
-  color: #888;
+body {
+  background: #fff;
+}
+
+:root {
+  --instrument-font: "Instrument Sans", sans-serif;
+  --manrope-font: "Manrope", sans-serif;
+  --cabinetgrotesk-font: "Cabinet Grotesk", sans-serif;
+  --theme-color: #3b84f6;
+}
+
+.section {
+  max-width: 1600px;
+  margin-inline: auto;
+  /* padding: 0 20px; */
+  position: relative;
+}
+
+.container {
+  padding: 3.5rem 2rem;
+  margin-inline: auto;
+  width: 92%;
+}
+
+.heading {
+  font-family: var(--cabinetgrotesk-font);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 150%;
+}
+
+.subHeading {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--theme-color);
+}
+
+.headingPara {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.ctaButton {
+  background: var(--theme-color);
+  padding: 18px 24px;
+  gap: 10px;
+  border-radius: 44px;
+  font-family: var(--instrument-font);
+  font-weight: 500;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  max-width: fit-content;
+  border: none;
+}
+
+.ctaButton.whiteCta{
+  background-color: #FFF;
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
 }

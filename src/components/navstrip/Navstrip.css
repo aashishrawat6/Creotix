@@ -1,0 +1,33 @@
+#navstrip {
+  background: var(--theme-color);
+}
+
+#navstrip .strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 12px 1rem;
+  margin-inline: auto;
+}
+
+#navstrip .right-side,
+#navstrip .left-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#navstrip .left-side a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#navstrip .left-side a,
+#navstrip .right-side span {
+  font-family: var(--instrument-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}

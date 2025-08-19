@@ -1,0 +1,109 @@
+#service .parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows: repeat(12, 1fr); */
+   grid-template-rows: repeat(12, minmax(10px, auto));
+     padding-block: 1rem; /* shrink outer padding */
+
+  gap: 16px;
+}
+
+#service .div1 {
+  grid-column: span 4 / span 4;
+  grid-row: span 3 / span 3;
+}
+
+#service .parent > div {
+  border-radius: 20px;
+  padding: 1rem;
+  /* max-height: fit-content; */
+}
+
+#service img{
+    width: 75%;
+    height: fit-content;
+    /* max-width: fit-content; */
+    max-width: 300px;
+    margin-inline: auto;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+#service .ctaButton {
+  background: transparent;
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  margin-top: 2rem;
+}
+
+#service .serviceTitle {
+  font-weight: 700;
+  font-size: 44px;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+#service .servicePara {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+#service .div2 {
+  grid-column: span 8 / span 8;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid #0071ED;
+  background-color: #D6F2FF;
+}
+
+#service .div3 {
+  grid-column: span 6 / span 6;
+  grid-row: span 6 / span 6;
+  grid-row-start: 4;
+  background-color: #E3E6FC;
+  border: 1px solid #6C54D7;
+}
+
+#service .div4 {
+  grid-column: span 3 / span 3;
+  grid-row: span 6 / span 6;
+  grid-column-start: 7;
+  grid-row-start: 4;
+  border: 1px solid #9331F6;
+  background-color: #F0E9FF;
+
+  img{
+    width: 100%;
+  }
+}
+
+#service .div5 {
+  grid-column: span 3 / span 3;
+  grid-row: span 9 / span 9;
+  grid-column-start: 10;
+  grid-row-start: 4;
+  border: 1px solid #5D45BD;
+  background-color: #E3E6FC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img{
+    width: 100%;
+  }
+}
+
+#service .div6 {
+  grid-column: span 9 / span 9;
+  grid-row: span 3 / span 3;
+  grid-row-start: 10;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid #0071ED;
+  background-color: #DBEAFE;
+}

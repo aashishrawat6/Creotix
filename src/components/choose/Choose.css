@@ -1,0 +1,64 @@
+#choose .container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* position: relative; */
+}
+
+#choose .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 125px;
+  max-width: fit-content;
+}
+
+#choose .body {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#choose .factorTitle {
+  font-family: var(--instrument-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+#choose .factorPara {
+  font-family: var(--instrument-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828283;
+  margin-block: 0.75rem;
+}
+
+#choose .factor {
+  border: none;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(270deg, #ffffff -0.87%, #3b84f6 100%);
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+}
+
+#choose .leftSide {
+  max-height: 700px;
+  max-width: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+
+  > img {
+    object-fit: contain;
+    /* height: inherit; */
+    width: 100%;
+    border-radius: 16px;
+  }
+}

@@ -1,0 +1,42 @@
+#points .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+#points .pointBox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#points .iconBox {
+  border: 1px solid #cfcfcf;
+  box-shadow: 0px 7px 29px 0px #64646f33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#points .title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--theme-color);
+}
+
+#points .para {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+#points .point2 .title{
+    color: #DB00AC;
+}
+
+#points .point3 .title{
+    color: #663399;
+}
