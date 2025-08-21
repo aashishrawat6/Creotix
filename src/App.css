@@ -66,6 +66,7 @@ body {
   padding: 3.5rem 2rem;
   margin-inline: auto;
   width: 92%;
+  /* overflow: hidden; */
 }
 
 .heading {

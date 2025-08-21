@@ -20,7 +20,6 @@ function App() {
       <Service />
       <Why />
       <Approach />
-      {/* <Choose/> */}
       <Potential />
       <Blog />
       <Form />
@@ -29,5 +28,6 @@ function App() {
     </>
   );
 }
+{/* <Choose/> */}
 
 export default App;
