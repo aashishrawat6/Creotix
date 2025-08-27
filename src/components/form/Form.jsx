@@ -106,7 +106,7 @@ const Form = () => {
 
             {/* Submit Button */}
             <button type="submit" disabled={isSubmitting} className="ctaButton">
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </form>
         </div>

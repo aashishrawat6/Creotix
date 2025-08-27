@@ -9,15 +9,16 @@ import pin from "/pin.svg";
 import mail from "/iconMail.png";
 import phone from "/iconPhone.png";
 import location from "/iconPin.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section id="footer">
       <footer className="section">
         <div className="container footer-grid">
           <div className="grid1">
-            <a href="">
-              <img src={logo} alt="Logo" className="logo"/>
-            </a>
+            <Link to="/">
+              <img src={logo} alt="Logo" className="logo" />
+            </Link>
             <p>
               In a fast-paced digital world, choosing the right IT partner can
               make all the difference. Here's why businesses around the globe
@@ -44,45 +45,109 @@ const Footer = () => {
           <div className="grid2">
             <h3 className="footerHeading">Quick Links</h3>
             <ul className="footerUl">
-              <li className="footerLi"><a href="">Services</a></li>
-              <li className="footerLi"><a href="">Projects</a></li>
-              <li className="footerLi"><a href="">About Us</a></li>
-              <li className="footerLi"><a href="">Blogs</a></li>
-              <li className="footerLi"><a href="">Careers</a></li>
+              <li className="footerLi">
+                <a href="">Services</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Projects</a>
+              </li>
+              <li className="footerLi">
+                <a href="">About Us</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Blogs</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Careers</a>
+              </li>
             </ul>
           </div>
           <div className="grid3">
             <h3 className="footerHeading">Services</h3>
             <ul className="footerUl">
-              <li className="footerLi"><a href="">Web Development</a></li>
-              <li className="footerLi"><a href="">Software Development</a></li>
-              <li className="footerLi"><a href="">Digital Marketing</a></li>
-              <li className="footerLi"><a href="">Mobile App Development</a></li>
-              <li className="footerLi"><a href="">UI/UX Design</a></li>
+              <li className="footerLi">
+                <a href="">Web Development</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Software Development</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Digital Marketing</a>
+              </li>
+              <li className="footerLi">
+                <a href="">Mobile App Development</a>
+              </li>
+              <li className="footerLi">
+                <a href="">UI/UX Design</a>
+              </li>
             </ul>
+          </div>
+          <div className="mobilegrid">
+            <div className="grid2">
+              <h3 className="footerHeading">Quick Links</h3>
+              <ul className="footerUl">
+                <li className="footerLi">
+                  <a href="">Services</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Projects</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">About Us</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Blogs</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div className="grid3">
+              <h3 className="footerHeading">Services</h3>
+              <ul className="footerUl">
+                <li className="footerLi">
+                  <a href="">Web Development</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Software Development</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Digital Marketing</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">Mobile App Development</a>
+                </li>
+                <li className="footerLi">
+                  <a href="">UI/UX Design</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="grid4">
             <h3 className="footerHeading">Contact Us</h3>
+            <div className="grid4contentbox">
             <div className="grid4Content">
-                <h4>
-                    <img src={mail} alt="Email" />
-                    Email address
-                </h4>
-                <p>info@creotix.com</p>
+              <h4>
+                <img src={mail} alt="Email" />
+                Email address
+              </h4>
+              <p>info@creotix.com</p>
             </div>
             <div className="grid4Content">
-                <h4>
-                    <img src={phone} alt="Phone" />
-                    Phone number
-                </h4>
-                <p>+91 7579748161</p>
+              <h4>
+                <img src={phone} alt="Phone" />
+                Phone number
+              </h4>
+              <p>+91 7579748161</p>
             </div>
             <div className="grid4Content">
-                <h4>
-                    <img src={location} alt="Email" />
-                    Address
-                </h4>
-                <p>New Ashok Nagar, East Delhi, New Delhi 110096, India</p>
+              <h4>
+                <img src={location} alt="Email" />
+                Address
+              </h4>
+              <p>New Ashok Nagar, East Delhi, New Delhi 110096, India</p>
+            </div>
             </div>
           </div>
         </div>

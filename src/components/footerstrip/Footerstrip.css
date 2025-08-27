@@ -17,3 +17,13 @@
     color: #fff;
     text-align: center;
 }
+
+
+@media (max-width: 450px) {
+  #footerstrip .strip {
+    width: 100%;
+  }
+  #footerstrip p {
+    font-size: 12px;
+  }
+}

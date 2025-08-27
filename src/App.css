@@ -107,10 +107,59 @@ img {
   color: #fff;
   max-width: fit-content;
   border: none;
+  text-align: center;
 }
 
-.ctaButton.whiteCta{
-  background-color: #FFF;
+.ctaButton.whiteCta {
+  background-color: #fff;
   border: 1px solid var(--theme-color);
   color: var(--theme-color);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .subHeading{
+    font-size: 18px;
+  }
+  .heading{
+    font-size: 48px;
+  }
+  .headingPara {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+  .heading{
+    font-size: 42px;
+  }
+  .logo{
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .subHeading{
+    font-size: 16px;
+  }
+  .heading{
+    font-size: 32px;
+  }
+  .headingPara {
+    font-size: 12px;
+  }
+  button.ctaButton{
+    padding: 15px 32px;
+  }
+  .logo{
+    max-width: 100px;
+  }
 }

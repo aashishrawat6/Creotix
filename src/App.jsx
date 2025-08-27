@@ -11,23 +11,47 @@ import Potential from "./components/potential/Potential";
 import Service from "./components/servicegrid/Service";
 import Why from "./components/why/Why";
 import Approach from "./components/approach/Approach";
-function App() {
+import Count from "./components/count/Count";
+import Serve from "./components/serve/Serve";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+function AppContent() {
   return (
     <>
       <Navstrip />
-      <Herosection />
-      <Points />
-      <Service />
+      <Navbar />
+      
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Home />
+            {/* <Approach /> */}
+            <Serve />
+          </>
+        } />
+        <Route path="/about" element={<About />} />
+      </Routes>
+     
+      <Count />
       <Why />
-      <Approach />
       <Potential />
       <Blog />
       <Form />
-      <Footer />
+      <Footer /> 
       <Footerstrip />
     </>
   );
 }
-{/* <Choose/> */}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
 
 export default App;

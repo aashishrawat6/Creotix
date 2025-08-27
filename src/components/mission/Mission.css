@@ -1,0 +1,93 @@
+#mission .missionContent,
+#mission .visionContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3rem;
+}
+
+#mission .missionContent .mContent,
+#mission .visionContent .vContent{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+}
+#mission .missionContent .mContent{
+    background-color: #E3E6FC;
+    border: 1px solid #6C54D7;
+}
+#mission .visionContent .vContent{
+    background-color: #F0E9FF;
+    border: 1px solid #9331F6
+}
+#mission .missionContent .mImage,
+#mission .visionContent .vImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 24px;
+    padding: 1.5rem 4rem;
+    >img{
+        width: 75%;
+        max-width: max-content;
+    }
+}
+
+#mission .missionContent .mImage{
+    background-color: #6C54D7;
+    border: 1px solid #E3E6FC
+}
+
+#mission .visionContent .vImage{
+    background-color: #9331F6;
+    border: 1px solid #F0E9FF
+}
+
+#mission .container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#mission .headingPara{
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 850px) {
+    #mission .missionContent,
+    #mission .visionContent{
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    #mission .container{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #mission .missionContent .mContent, #mission .visionContent .vContent{
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+    }
+    #mission .missionContent .mImage, #mission .visionContent .vImage{
+        width: 100%;
+        border-radius: 8px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    #mission .heading {
+        font-size: 24px;
+    }
+    #mission .missionContent .mImage, #mission .visionContent .vImage {
+        >img {
+            max-width: 80px;
+        }
+    }
+}

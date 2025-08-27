@@ -1,0 +1,46 @@
+#building .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#building .bRight {
+  width: 50%;
+}
+
+#building .brightimage {
+  width: 100%;
+  max-width: max-content;
+}
+
+#building .bLeft {
+  width: 50%;
+}
+
+#building .buildingContent {
+  width: 90%;
+  margin-inline: auto;
+}
+
+@media (max-width: 850px) {
+  #building .container {
+    flex-direction: column;
+  }
+  #building .bLeft {
+    width: 100%;
+  }
+  #building .bRight {
+    width: 100%;
+    max-width: max-content;
+  }
+  #building .buildingContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #building .container {
+    gap: 1rem;
+  }
+}

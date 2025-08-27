@@ -9,7 +9,7 @@ const Herosection = () => {
     <section id="hero">
       <div className="section">
         <div className="container">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="heroContent">
             <h1 className="heading">
               Empowering Your Business with Next-Gen <span>IT Solutions</span>
@@ -19,10 +19,11 @@ const Herosection = () => {
             </p>
             <div className="buttonDiv">
                 <button className="ctaButton">
-                  Get a Free Quote
+                  Let's Talk
                 </button>
                 <button className="ctaButton whiteCta">
-                  Explore Our Services
+                  Get a Free Quote
+                  {/* Explore Our Services */}
                 </button>
             </div>
             <div className="phoneBox">

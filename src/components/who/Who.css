@@ -1,0 +1,46 @@
+#who .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#who .whoRight{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#who .whoLeft{
+    width: 50%;
+}
+
+#who .whoImage{
+    width: 90%;
+    max-width: max-content;
+    object-fit: cover;
+    display: inline-block;
+}
+
+@media (max-width: 850px) {
+  #who .container {
+    flex-direction: column;
+  }
+  #who .whoRight {
+    width: 100%;
+  }
+  #who .whoLeft {
+    width: 100%;
+    max-width: max-content;
+  }
+  #who .whoImage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #who .container {
+    gap: 1rem;
+  }
+}
+  

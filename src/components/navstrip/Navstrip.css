@@ -31,3 +31,31 @@
   font-size: 14px;
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+  #navstrip .strip {
+    width: 95%;
+  }
+}
+@media (max-width: 850px) {
+  #navstrip .right-side {
+    display: none;
+  }
+  #navstrip .left-side {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 450px) {
+  #navstrip .strip {
+    width: 100%;
+  }
+  #navstrip .left-side a {
+    font-size: 12px;
+  }
+  #navstrip .left-side a img{
+    width: 14px;
+    height: 14px;
+  }
+}

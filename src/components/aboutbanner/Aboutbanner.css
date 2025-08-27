@@ -1,0 +1,49 @@
+#aboutus {
+  position: relative;
+  background-color: #b0e1fb;
+  background-image: url("/aboutright.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#aboutus .section {
+  position: relative;
+}
+
+#aboutus .aboutleftimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: -webkit-fill-available;
+}
+#aboutus .aboutheading {
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0071ed;
+}
+
+#aboutus .aboutContent{
+    background-image: url('/aboutbg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block: 2rem;
+}
+
+@media (max-width: 450px) {
+  #aboutus .aboutheading{
+    font-size: 24px;
+  }
+  #aboutus .aboutContent {
+    width: 60%;
+    margin-inline: auto;
+  }
+  #aboutus .container{
+    padding-block: 1rem;
+  }
+}

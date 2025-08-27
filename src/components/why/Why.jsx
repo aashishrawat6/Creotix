@@ -38,7 +38,7 @@ const Why = () => {
         <div className="container">
           <h1 className="heading">Why Choose Creotix Solution?</h1>
           <div className="content">
-            <img src={whyimg} alt="" />
+            <img src={whyimg} alt="circle" className="circle" />
 
             {data.map((item) => {
               return (

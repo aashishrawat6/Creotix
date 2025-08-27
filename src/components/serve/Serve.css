@@ -1,0 +1,68 @@
+#serve .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+#serve .serveleft {
+  width: 50%;
+}
+#serve .serveright {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#serve .servecard h2 {
+  color: #1a1a1a;
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  margin-block: 1rem;
+}
+#serve .servecard p {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+}
+
+#serve .servecard{
+    border: 1px solid #C3BBBB;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        border: 1px solid var(--theme-color);   
+    }
+}
+
+#serve .div1{
+  display: flex;
+  align-items: center;
+}
+
+#serve .div2{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+#serve .div3{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+    #serve {
+      display: none;
+    }
+}

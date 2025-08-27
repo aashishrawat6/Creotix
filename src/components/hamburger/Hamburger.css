@@ -1,0 +1,208 @@
+#hamBurger.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1000; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hamBurger .hamburger-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+#hamBurger .hamburger-content {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: var(--theme-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  animation: slideIn 0.3s ease-out forwards;
+  overflow-y: auto;
+  min-width: 320px;
+}
+
+#hamBurger .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 1001;
+}
+
+#hamBurger .close-button span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+#hamBurger .close-button span:first-child {
+  transform: rotate(45deg);
+}
+
+#hamBurger .close-button span:last-child {
+  transform: rotate(-45deg);
+}
+
+#hamBurger .hamburger-nav {
+  margin-top: 50px;
+  color: #000;
+}
+
+#hamBurger .hamburger-navul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#hamBurger .hamburger-navul a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+#hamBurger .hamburger-navul a:hover,
+#hamBurger .hamburger-navul a.active {
+  color: #333;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+#hamBurger .hamburger-navul a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#hamBurger .hamburger-navul a:hover,
+#hamBurger .hamburger-navul a.active {
+  color: #333;
+}
+
+#hamBurger .ctaButton {
+  /* display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease; */
+}
+
+#hamBurger .ctaButton:hover {
+  background-color: #0056b3;
+}
+
+#hamBurger .right-side {
+  margin-top: auto;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+}
+
+#hamBurger .right-side span {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #FFF;
+}
+
+#hamBurger .social-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#hamBurger .social-links a {
+  transition: transform 0.3s ease;
+}
+
+#hamBurger .social-links a:hover {
+  transform: translateY(-3px);
+}
+
+#hamBurger .aImages {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .hamburger-content {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger-content {
+    width: 100%;
+  }
+}
+
+/* Animation for closing */
+#hamBurger.hamburger-menu.closing .hamburger-overlay {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+#hamBurger.hamburger-menu.closing .hamburger-content {
+  animation: slideOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}

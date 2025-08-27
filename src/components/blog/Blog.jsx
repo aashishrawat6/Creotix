@@ -48,7 +48,7 @@ const Blog = () => {
               <h1 className="heading">
                 Fresh Ideas in Tech, Design & Development
               </h1>
-              <div className="ctaButton">View all</div>
+              <div className="ctaButton topside">View all</div>
             </div>
           </div>
           <div className="body">
@@ -59,9 +59,11 @@ const Blog = () => {
                     <img src={blog.img} alt="" className="blogImage" />
                   </div>
                   <div className="about">
+                    <h2>{blog.title}</h2>
+                    <p>{blog.about}</p>
                     <div className="timeline">
                       <span>{blog.date}</span>
-                      <div className="timelineRight">
+                      {/* <div className="timelineRight">
                         <span>
                           <img src={eye} alt="" />
                           {blog.views} Views
@@ -70,16 +72,16 @@ const Blog = () => {
                           <img src={comment} alt="" />
                           {blog.comments} Comments
                         </span>
-                      </div>
+                      </div> */}
+                      <button type="button">Read More</button>
                     </div>
-                    <h2>{blog.title}</h2>
-                    <p>{blog.about}</p>
-                    <button type="button">Read More</button>
                   </div>
                 </div>
               );
             })}
           </div>
+          <div className="ctaButton bottomside">View all</div>
+
         </div>
       </div>
     </section>

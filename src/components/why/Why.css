@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-#why .container{
+#why .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,16 @@
   margin-inline: auto;
   width: max-content;
   margin-top: 3rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  max-width: 50%;
+}
+
+#why .circle {
+  width: 100%;
+  max-width: fit-content;
 }
 
 #why .box {
@@ -41,29 +49,110 @@
 
 #why .inner p {
   font-weight: 400;
-  letter-spacing: 6%;
 }
 
 #why .box1 {
-    top: 15%;
-    right: -60%;
+  top: 15%;
+  right: -60%;
 }
 
-#why .box2{
-    bottom: 18%;
-    right: -60%;
+#why .box2 {
+  bottom: 18%;
+  right: -60%;
 }
 
-#why .box3{
-    bottom:18%;
-    left:-60%;
-    flex-direction: row-reverse;
-    text-align: right;
+#why .box3 {
+  bottom: 18%;
+  left: -60%;
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
-#why .box4{
-    top:15%;
-    left: -60%;
-    flex-direction: row-reverse;
-    text-align: right;
+#why .box4 {
+  top: 15%;
+  left: -60%;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+@media (max-width: 1050px) {
+  #why .inner h2 {
+    font-size: 20px;
+  }
+  #why .inner p {
+    font-size: 15px;
+  }
+  #why .imgBox img {
+    width: 50px;
+    height: 50px;
+  }
+  #why .box {
+    gap: 0.5rem;
+    max-width: 70%;
+  }
+  #why .box1 {
+    top: 10%;
+    right: -50%;
+  }
+
+  #why .box2 {
+    bottom: 15%;
+    right: -50%;
+  }
+
+  #why .box3 {
+    bottom: 15%;
+    left: -50%;
+  }
+
+  #why .box4 {
+    top: 10%;
+    left: -50%;
+  }
+}
+
+
+@media (max-width: 850px) {
+  #why .box {
+    position: relative;
+    /* margin-right: auto; */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  #why .box1,
+  #why .box2,
+  #why .box3,
+  #why .box4 {
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+  #why .box3,
+  #why .box4 {
+   flex-direction: row;
+  }
+  #why .content{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  #why .circle{
+    width: 50%;
+  }
+  #why .ctaButton{
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #why .circle {
+      width: 74%;
+  }
+}
+
+@media (max-width: 450px) {
+  #why .inner p {
+    font-size: 14px;
+  }
 }
