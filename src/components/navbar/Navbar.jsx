@@ -9,8 +9,10 @@ import { Hamburger } from '../hamburger/Hamburger';
 
 const Navbar = () => {
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const [activeLink, setActiveLink] = useState(location.pathname === '/' ? null : location.pathname);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,6 +22,10 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
   
+  useEffect(() => {
+    setActiveLink(location.pathname === '/' ? null : location.pathname);
+  }, [location.pathname]);
+
   useEffect(() => {
     const nav = document.getElementById('nav');
     const handleScroll = () => {

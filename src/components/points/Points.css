@@ -40,3 +40,25 @@
 #points .point3 .title{
     color: #663399;
 }
+
+@media (max-width: 850px) {
+    #points .pointBox {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
+@media (max-width: 450px) {
+  #points .iconBox img{
+    max-width: 24px;
+  }
+  #points .iconBox{
+    padding: 12px;
+  }
+  #points .title{
+    font-size: 14px;
+  }
+  #points .para{
+    font-size: 12px;
+  }
+}

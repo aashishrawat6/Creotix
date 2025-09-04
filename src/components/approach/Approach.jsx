@@ -33,7 +33,7 @@ const Approach = () => {
 
       // Left → Right (positive x movement)
       gsap.to(slideTrack, {
-        x: totalScrollDistance,     // 👈 instead of -totalScrollDistance
+        x: -totalScrollDistance,     // 👈 instead of -totalScrollDistance
         ease: "none",
         scrollTrigger: {
           trigger: container,

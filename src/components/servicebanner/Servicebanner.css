@@ -1,0 +1,49 @@
+#servicepage {
+  position: relative;
+  background-color: #b0e1fb;
+  background-image: url("/aboutright.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#servicepage .section {
+  position: relative;
+}
+
+#servicepage .aboutleftimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: -webkit-fill-available;
+}
+#servicepage .aboutheading {
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0071ed;
+}
+
+#servicepage .aboutContent{
+    background-image: url('/servicesbg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block: 2rem;
+}
+
+@media (max-width: 450px) {
+  #servicepage .aboutheading{
+    font-size: 24px;
+  }
+  #servicepage .aboutContent {
+    width: 60%;
+    margin-inline: auto;
+  }
+  #servicepage .container{
+    padding-block: 1rem;
+  }
+}
