@@ -1,7 +1,7 @@
 #servicepage {
   position: relative;
-  background-color: #b0e1fb;
-  background-image: url("/aboutright.png");
+  background-color: #FFF;
+  background-image: url("/servicebg.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;

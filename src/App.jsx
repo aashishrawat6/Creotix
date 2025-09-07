@@ -1,14 +1,18 @@
 import "./App.css";
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingFallback from "./components/Loader/LoadingFallback";
 // Lazy load components
 const LazyBlog = lazy(() => import("./components/blog/Blog"));
 const LazyChoose = lazy(() => import("./components/choose/Choose"));
 const LazyFooter = lazy(() => import("./components/footer/Footer"));
-const LazyFooterstrip = lazy(() => import("./components/footerstrip/Footerstrip"));
+const LazyFooterstrip = lazy(() =>
+  import("./components/footerstrip/Footerstrip")
+);
 const LazyForm = lazy(() => import("./components/form/Form"));
-const LazyHerosection = lazy(() => import("./components/herosection/Herosection"));
+const LazyHerosection = lazy(() =>
+  import("./components/herosection/Herosection")
+);
 const LazyNavstrip = lazy(() => import("./components/navstrip/Navstrip"));
 const LazyPoints = lazy(() => import("./components/points/Points"));
 const LazyPotential = lazy(() => import("./components/potential/Potential"));
@@ -21,7 +25,8 @@ const LazyNavbar = lazy(() => import("./components/navbar/Navbar"));
 const LazyHome = lazy(() => import("./pages/Home"));
 const LazyAbout = lazy(() => import("./pages/About"));
 const LazyServices = lazy(() => import("./pages/Services"));
-
+const LazyContact = lazy(() => import("./pages/Contact"));
+const LazyNoPage = lazy(() => import("./pages/Nopage"));
 // Loading component
 // const LoadingFallback = () => (
 //   <div style={{
@@ -55,31 +60,47 @@ function AppContent() {
   return (
     <Suspense fallback={<LoadingFallback />}>
       <Routes>
-        <Route 
-          path="/" 
+        <Route path="*" element={<LazyNoPage />} />
+        <Route
+          path="/"
           element={
             <CommonLayout>
               <LazyHome />
               <LazyApproach />
               <LazyServe />
             </CommonLayout>
-          } 
+          }
         />
-        <Route 
-          path="/about" 
+        <Route
+          path="/about"
           element={
             <CommonLayout>
               <LazyAbout />
             </CommonLayout>
-          } 
+          }
         />
-        <Route 
-          path="/services" 
+        <Route
+          path="/services"
           element={
             <CommonLayout>
               <LazyServices />
             </CommonLayout>
-          } 
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <LazyNavstrip />
+              <LazyNavbar />
+              <LazyContact />
+              <LazyForm />
+              <LazyFooter />
+              <LazyFooterstrip />
+            </>
+            // <CommonLayout>
+            // </CommonLayout>
+          }
         />
       </Routes>
     </Suspense>

@@ -1,0 +1,51 @@
+#contactpage {
+    position: relative;
+    /* background-color: #b0e1fb; */
+    background: linear-gradient(90.1deg, #BEDEF3 62.27%, rgba(190, 222, 243, 0) 84.13%);
+
+    background-image: url("/contactbg.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  
+  #contactpage .section {
+    position: relative;
+  }
+  
+  #contactpage .aboutleftimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: -webkit-fill-available;
+  }
+  #contactpage .aboutheading {
+    font-family: Cabinet Grotesk;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0071ed;
+  }
+  
+  #contactpage .aboutContent{
+      background-image: url('/contacttext.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-block: 2rem;
+  }
+  
+  @media (max-width: 450px) {
+    #contactpage .aboutheading{
+      font-size: 24px;
+    }
+    #contactpage .aboutContent {
+      width: 60%;
+      margin-inline: auto;
+    }
+    #contactpage .container{
+      padding-block: 1rem;
+    }
+  }
