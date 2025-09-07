@@ -1,7 +1,7 @@
 import "./App.css";
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import LoadingFallback from "./components/Loader/LoadingFallback";
 // Lazy load components
 const LazyBlog = lazy(() => import("./components/blog/Blog"));
 const LazyChoose = lazy(() => import("./components/choose/Choose"));
@@ -23,17 +23,17 @@ const LazyAbout = lazy(() => import("./pages/About"));
 const LazyServices = lazy(() => import("./pages/Services"));
 
 // Loading component
-const LoadingFallback = () => (
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '10vh',
-    width: '100%',
-  }}>
-    <div>Loading...</div>
-  </div>
-);
+// const LoadingFallback = () => (
+//   <div style={{
+//     display: 'flex',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     height: '10vh',
+//     width: '100%',
+//   }}>
+//     <div>Loading...</div>
+//   </div>
+// );
 
 // Common layout component
 const CommonLayout = ({ children }) => (
