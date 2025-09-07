@@ -50,4 +50,44 @@
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
+  /*  */
+  #approach {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-block: 10vh; /* breathing space */
+  }
   
+  #approach .heading,
+  #approach .subHeading {
+    text-align: center;
+  }
+  
+  #approach .slide {
+    display: flex;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+  
+  #approach .slideBox {
+    flex: 0 0 auto;
+    width: clamp(280px, 40vw, 475px); /* ✅ responsive width */
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  #approach .slideBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  /* extra space */
+  #approach {
+    padding-block: 0; /* remove excess padding */
+    margin-bottom: 0; /* avoid gaps */
+  }  
